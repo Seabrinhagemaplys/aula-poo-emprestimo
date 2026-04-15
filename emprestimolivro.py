@@ -1,3 +1,4 @@
+from bancodedados import bancoDeDados
 from emprestimo import Emprestimo
 
 class emprestimoLivro(Emprestimo):
@@ -7,4 +8,5 @@ class emprestimoLivro(Emprestimo):
         self.nomeUsuario = nomeUsuario
         self.titulo = titulo
     
-    def
+    def registrar(self, bancoDados: bancoDeDados):
+        bancoDados.registrar(self)
