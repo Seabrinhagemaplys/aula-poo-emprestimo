@@ -14,4 +14,5 @@ class emprestimoRevista(emprestimoLivro):
         self.edicao = edicao
 
     def registrar(self, bancoDados):
-        bancoDados.registrar(self)
+        bancoDados.registrarRevista(self)
+        bancoDados.prazoDevolucao(2)

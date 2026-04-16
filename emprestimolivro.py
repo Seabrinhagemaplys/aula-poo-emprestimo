@@ -6,4 +6,5 @@ class emprestimoLivro(Emprestimo):
         super().__init__(nomeUsuario, titulo)
     
     def registrar(self, bancoDados: bancoDeDados):
-        bancoDados.registrar(self)
+        bancoDados.registrarLivro(self)
+        bancoDados.prazoDevolucao(7)
